@@ -1,0 +1,25 @@
+Problem 4:
+In the getCoures method, I create a random number from java.util.Random and use the number to get the random name from the four courses, finally return the random course name.
+
+Problem 5: 
+I have changed getFibTerm(n - 1) - getFibTerm(n - 2) to getFibTerm(n - 1) + getFibTerm(n - 2) to pass the test case.
+I have changed (n <= 0) to (n < 0) to make sure that if n=0, getFibTerm will return 1 as the result to pass the test case.
+I have changed (n <= 2) to (n < 2) to make sure that when n=1 and n=2 getFibTerm will return 1 as the result to pass the test case.
+I have changed the above area to let the source code pass the Junit Test.
+
+Problem 6:
+For the reverse number method, I first get an input use the Scanner, then if the input is not an integer, it will throw an InputMismatchException exception, and if the input is null, it will throw a NullPointerException exception. 
+
+Once validate the input, I use string builder to append every digit of the number, reverse it then change it back to integer and return the result.
+
+Problem 7：
+For vehicle class. I have set a constructor, which has two parameter velocity and direction, and also have both the set and get method.
+
+For Highway class numberVehiclesEastbound() and numberVehiclesWestbound(), I have set two global variable countEast and countWest to keep the the number of the vehicle on the highway. When adding one new vehicle to the highway, depending on the vehicle‘s direction, the number will increase by one and when removing one vehicle from the highway, the number will decrease by one. I think this will be more efficient than go through all the vehicle to get the numbers of vehicle on the highway.
+
+For Highway class getVelocityEastbound() and getVelocityWestbound(), I go through all the vehicle to get the min speed. I think if I use the other method(keep track of the min speed vehicle when adding a new vehicle), whenever you add a new vehicle, you need to implement the sorting algorithm, which may not be very efficient.
+
+For ScenicRoad class, I have created a Highway class variable inside it, and when trying to implement the add method in ScenicRoad class, I have reused some of the methods from the highway class.
+
+For HighwayTest and ScenicRoadTest, I have tested the all the method from each class to make sure all the function(add,remove,number of vehicles,min speed) can be performed. 
+ 
